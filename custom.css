@@ -1,0 +1,40 @@
+/* =====  Custom site styles – load AFTER bootstrap.css  ===== */
+
+/* -- 1  site-wide font & background -- */
+body{
+    font-family:'Yrsa',serif;
+    background:#d8d8d8;          /* heather gray */
+    color:#000;
+}
+
+/* make all navbar links white */
+.navbar .nav-link{
+    color:#ffffff !important;      /* <-- change from #000000 to #ffffff */
+}
+
+
+/* -- 2  navbar link hover / focus -- */
+.navbar .nav-link:hover,
+.navbar .nav-link:focus{
+    background:#555;             /* charcoal gray */
+    color:#fff !important;
+}
+
+/* -- 3  lift cards on hover (projects) -- */
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.15);
+    transition:.25s;
+}
+
+/* -- 4  timeline badge (resume) -- */
+.timeline-badge{
+    width:14px;height:14px;border-radius:50%;
+    background:#000;
+    display:inline-block;margin-right:.5rem;
+}
+
+/* -- 5  highlight active nav link (desktop) -- */
+.navbar .nav-link.active{
+    border-bottom:3px solid #000;
+}
