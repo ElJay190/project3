@@ -38,3 +38,76 @@ body{
 .navbar .nav-link.active{
     border-bottom:3px solid #000;
 }
+
+/* === slideshow controls (taken from W3Schools) === */
+.slideshow-container{position:relative;margin:auto;max-width:900px}
+.mySlides{display:none}
+.prev,.next{
+  cursor:pointer;position:absolute;top:50%;width:auto;
+  padding:16px;margin-top:-22px;color:white;font-weight:bold;font-size:18px;
+  user-select:none;background:rgba(0,0,0,.3)
+}
+.next{right:0;border-radius:3px 0 0 3px}
+.prev{left:0;border-radius:0 3px 3px 0}
+.dot{
+  cursor:pointer;height:15px;width:15px;margin:0 2px;background-color:#bbb;
+  border-radius:50%;display:inline-block;transition:background-color .6s ease;
+}
+.active,.dot:hover{background-color:#717171}
+
+/* make invalid form fields red */
+.invalid{background-color:#ffdddd}
+
+/* step circles */
+.step{
+  height:15px;width:15px;margin:0 2px;background-color:#bbbbbb;
+  border:none;border-radius:50%;display:inline-block;opacity:.5
+}
+.step.active{opacity:1}
+.step.finish{background-color:#04AA6D}
+
+/* =====  stepped form styling  ===== */
+.form-card{
+  background:#ffffff;
+  max-width:520px;      /* desktop width */
+  padding:2rem 2.5rem;
+  border-radius:8px;
+  box-shadow:0 0.5rem 1rem rgba(0,0,0,.15);
+}
+
+/* inputs & textarea span full width */
+.form-card input,
+.form-card textarea{
+  width:100%;
+  padding:.45rem .5rem;
+  border:1px solid #ced4da;
+  border-radius:4px;
+  box-sizing:border-box;
+}
+
+/* field spacing */
+.form-card .tab      {margin-bottom:1rem;}
+.form-card .tab h4   {margin-bottom:.75rem;}
+.form-card p         {margin:.4rem 0;}
+
+/* nav buttons row */
+#prevBtn,#nextBtn{
+  background:#222;
+  color:#fff;
+  border:none;
+  padding:.45rem 1.4rem;
+  font-size:.9rem;
+  border-radius:4px;
+}
+#prevBtn{background:#6c757d;}  /* grey for previous */
+
+#prevBtn:hover,#nextBtn:hover{opacity:.85}
+
+/* keep button group bottom‑right inside the card */
+.form-card [style*="overflow:auto"]{
+  overflow:auto!important;      /* override inline */
+  margin-top:1rem;
+}
+.form-card [style*="overflow:auto"] > div{
+  float:right;
+}
