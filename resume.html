@@ -1,48 +1,52 @@
-<!DOCTYPE html><html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Resume • Loyd Jones</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<!-- fonts + css -->
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Radley&family=Yrsa:wght@400;600&display=swap" rel="stylesheet">
-<link href="custom.css" rel="stylesheet">
-</head><body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Résumé • Loyd Jones</title>
 
-<!-- NAVBAR / OFFCANVAS -->
-<!-- (insert the shared navbar/offcanvas block here – mark Home as active) -->
- <!-- =====  NAVBAR  (desktop) & Offcanvas (mobile)  ===== -->
- <nav class="navbar navbar-dark bg-dark fixed-top">
-    <div class="container-fluid">
-      <!-- off‑canvas toggle (shows on mobile) -->
-      <button class="navbar-toggler" type="button"
-              data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav"
-              aria-controls="offcanvasNav">
+<!--  Bootstrap 5  -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!--  Google Fonts  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Radley&family=Yrsa:wght@400;600&display=swap" rel="stylesheet">
+
+<!--  Font Awesome  -->
+<script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+
+<!--  Site‑specific rules  -->
+<link href="custom.css" rel="stylesheet">
+</head>
+<body>
+
+<!--‑‑‑‑‑  NAVBAR / OFFCANVAS  ‑‑‑‑‑-->
+<nav class="navbar navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+             data-bs-target="#offcanvasNav" aria-controls="offcanvasNav">
         <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <!-- site/brand name -->
-      <a class="navbar-brand fw-bold" href="index.html">Loyd Jones</a>
-  
-      <!-- desktop menu (hidden on lg‑down via Bootstrap utilities) -->
-      <div class="d-none d-lg-flex">
+     </button>
+     <a class="navbar-brand fw-bold" href="index.html">Loyd Jones</a>
+     <div class="d-none d-lg-flex">
         <a class="nav-link px-3" href="index.html">Home</a>
-        <a class="nav-link px-3" href="resume.html">Resume</a>
+        <a class="nav-link px-3 active" href="resume.html">Resume</a>
         <a class="nav-link px-3" href="classes.html">Classes</a>
         <a class="nav-link px-3" href="projects.html">Projects</a>
         <a class="nav-link px-3" href="skills.html">Skills</a>
         <a class="nav-link px-3" href="gallery.html">Gallery</a>
         <a class="nav-link px-3" href="contact.html">Contact</a>
-      </div>
-    </div>
-  </nav>
-  
-  <!-- off‑canvas sidebar (used on small screens) -->
-  <div class="offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="offcanvasNav">
-    <div class="offcanvas-header">
+     </div>
+  </div>
+</nav>
+
+<div class="offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="offcanvasNav">
+  <div class="offcanvas-header">
       <h5 class="offcanvas-title">Menu</h5>
       <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
-    </div>
-    <div class="offcanvas-body">
+  </div>
+  <div class="offcanvas-body">
       <a class="nav-link text-white mb-2" href="index.html">Home</a>
       <a class="nav-link text-white mb-2" href="resume.html">Resume</a>
       <a class="nav-link text-white mb-2" href="classes.html">Classes</a>
@@ -50,56 +54,142 @@
       <a class="nav-link text-white mb-2" href="skills.html">Skills</a>
       <a class="nav-link text-white mb-2" href="gallery.html">Gallery</a>
       <a class="nav-link text-white mb-2" href="contact.html">Contact</a>
-    </div>
   </div>
-  
-  <!-- =====  /NAVBAR  ===== -->
-  
+</div>
+<!--‑‑‑‑‑  /NAVBAR  ‑‑‑‑‑-->
 
 <main class="container pt-5">
-    <h1 class="mt-5 mb-4">Professional Experience</h1>
 
-    <ul class="list-group mb-5">
-        <li class="list-group-item">
-            <span class="timeline-badge"></span>Director IT & Security • Acme Ops (Aug 2024 – present)
-            <ul>
-                <li>Modernised workflows via AI; cut support tickets 30 %</li>
-                <li>Led NIST-based security uplift across the enterprise</li>
+  <div class="row g-4 mt-5">
+    <!-- =====  LEFT COLUMN : profile & contact  ===== -->
+    <div class="col-lg-4">
+      <div class="card shadow-sm">
+        <div class="card-body text-center">
+          <img src="propic.jpg" class="rounded-circle mb-3" alt="Loyd Jones" width="120" height="120">
+          <h2 class="card-title mb-1">Loyd Jones</h2>
+          <p class="text-muted mb-3">IT Leader • Cloud Advocate • Builder</p>
+
+          <ul class="list-group list-group-flush text-start">
+            <li class="list-group-item">
+              <i class="fas fa-envelope me-2 text-warning"></i>
+              <a href="mailto:daeljay@gmail.com" class="text-decoration-none">daeljay@gmail.com</a>
+            </li>
+            <li class="list-group-item">
+              <i class="fab fa-linkedin me-2 text-primary"></i>
+              <a href="https://www.linkedin.com/in/loyd-jones-905a174/" target="_blank" class="text-decoration-none">
+                linkedin.com/in/loyd-jones-905a174
+              </a>
+            </li>
+            <li class="list-group-item">
+              <i class="fas fa-map-marker-alt me-2"></i>Los Angeles Area
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Skills quick view -->
+      <div class="card mt-4 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fas fa-tools me-2"></i>Key Skills</h5>
+          <p class="mb-1">AWS Cloud</p>
+          <div class="progress mb-2"><div class="progress-bar" style="width:95%"></div></div>
+          <p class="mb-1">IT Security / NIST</p>
+          <div class="progress mb-2"><div class="progress-bar bg-success" style="width:99%"></div></div>
+          <p class="mb-1">Python & Automation</p>
+          <div class="progress mb-2"><div class="progress-bar bg-info" style="width:85%"></div></div>
+          <p class="mb-1">Leadership</p>
+          <div class="progress"><div class="progress-bar bg-warning" style="width:92%"></div></div>
+        </div>
+      </div>
+    </div><!-- /.col-lg-4 -->
+
+    <!-- =====  RIGHT COLUMN : experience, education  ===== -->
+    <div class="col-lg-8">
+
+      <!-- Professional Experience -->
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header bg-dark text-white">
+          <h3 class="mb-0"><i class="fas fa-briefcase me-2"></i>Professional Experience</h3>
+        </div>
+        <div class="card-body">
+
+          <div class="mb-4">
+            <h5 class="fw-bold mb-1">Director, IT & Security <span class="text-muted fs-6">• Current Company</span></h5>
+            <small class="text-muted"><i class="far fa-calendar-alt me-1"></i>Aug 2024 – Present</small>
+            <ul class="mt-2">
+              <li>Modernised workflows via Gen‑AI; reduced support tickets 30 %</li>
+              <li>Led NIST‑based security uplift across the enterprise</li>
             </ul>
-        </li>
-        <li class="list-group-item">
-            <span class="timeline-badge"></span>Dirctor IT • CodeWise (Jan 2024 – Aug 2024)
-        </li>
-        <li class="list-group-item">
-            <span class="timeline-badge"></span>Technology Leader • COceanX (Jan 2023 – Jan 2024)
-        </li>
-    </ul>
+          </div>
 
-    <h2>Education & Certifications</h2>
-    <p>B.S. Applied Management • GCU<br>Cerritos College – Pre-CS coursework (in progress)</p>
-    <p>AWS Academy Cloud Foundations • ITIL v4 • CompTIA Sec+</p>
+          <div class="mb-4">
+            <h5 class="fw-bold mb-1">Director, IT Operations <span class="text-muted fs-6">• Previous Company 1</span></h5>
+            <small class="text-muted"><i class="far fa-calendar-alt me-1"></i>May 2022 – Aug 2024</small>
+            <ul class="mt-2">
+              <li>Oversaw global team and infrastructure; 99.99 % uptime</li>
+              <li>Drove SOC 2 Type II compliance and cloud cost‑optimisation</li>
+            </ul>
+          </div>
+
+          <div>
+            <h5 class="fw-bold mb-1">Technology Leader <span class="text-muted fs-6">• Previous Company 2</span></h5>
+            <small class="text-muted"><i class="far fa-calendar-alt me-1"></i>2017 – May 2024</small>
+            <ul class="mt-2">
+              <li>Managed cross‑functional teams (DevOps, security, help desk)</li>
+              <li>Implemented CI/CD pipelines; cut release time from 3 hrs → 15 min</li>
+            </ul>
+          </div>
+
+        </div><!-- /.card-body -->
+      </div><!-- /.card -->
+
+      <!-- Education & Certs -->
+      <div class="card shadow-sm">
+        <div class="card-header bg-dark text-white">
+          <h3 class="mb-0"><i class="fas fa-graduation-cap me-2"></i>Education & Certifications</h3>
+        </div>
+        <div class="card-body">
+
+          <ul class="list-group list-group-flush mb-3">
+            <li class="list-group-item">
+              <strong>B.S. Business Management</strong> — California State University of Fullerton
+            </li>
+            <li class="list-group-item">
+              Pre‑CS Coursework — Cerritos College (in progress - with awesome Professor Allen)
+            </li>
+          </ul>
+
+          <div class="row row-cols-2 row-cols-md-3 g-2">
+            <div class="col"><span class="badge bg-success w-100 py-2"><i class="fab fa-aws me-1"></i>AWS Cloud Foundation</span></div>
+            <div class="col"><span class="badge bg-info w-100 py-2">NIST Compliance</span></div>
+            <div class="col"><span class="badge bg-warning text-dark w-100 py-2">IT Operations</span></div>
+          </div>
+
+        </div>
+      </div><!-- /.card -->
+
+    </div><!-- /.col-lg-8 -->
+  </div><!-- /.row -->
+
 </main>
 
-<footer class="text-center py-4">Download a full PDF résumé from <a href="#" target="_blank">here</a>.</footer>
 <footer class="text-center py-4">
-    <!-- email link -->
-    <p class="mb-1">
-        Email:
-        <a href="mailto:daeljay@gmail.com" class="text-dark">
-            daeljay@gmail.com
-        </a>
-    </p>
-
-    <!-- LinkedIn link with favicon -->
-    <p class="mb-0">
-        <a href="https://www.linkedin.com/in/loyd-jones-905a174/"
-           target="_blank" rel="noopener"
-           class="text-dark text-decoration-none">
-            <img src="https://www.linkedin.com/favicon.ico"
-                 alt="" width="16" height="16" class="me-1">
-            Connect with me on Linked-In
-        </a>
-    </p>
+  <p class="mb-2">
+    <i class="fas fa-file-download me-1"></i>
+    <a href="#" target="_blank">Download full PDF Résumé</a>
+  </p>
+  <p class="mb-1">
+    <i class="fas fa-envelope me-1 text-warning"></i>
+    <a href="mailto:daeljay@gmail.com" class="text-dark">daeljay@gmail.com</a>
+  </p>
+  <p class="mb-0">
+     <i class="fab fa-linkedin me-1 text-primary"></i>
+     <a href="https://www.linkedin.com/in/loyd-jones-905a174/" target="_blank" class="text-dark text-decoration-none">
+       Connect with me on Linked‑In
+     </a>
+  </p>
 </footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body></html>
+</body>
+</html>
